@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job It - Mach's dir leicht</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Job-It</h1>
+            <nav>
+                <ul>
+                    <li><a href="Jobithome2.html" id="hometext">Home</a></li>
+                    <li><a href="About.html" id="aboutus">Über uns</a></li>
+                    <li><a href="#" id="contact">Kontakt</a></li>
+                    <li><a href="Login.html" id="login">Login</a></li>
+                </ul>
+                
+            </nav>
+            <div class="language-selector">
+                <h5>Language  </h5>
+                <section></section>
+                <img src="globe-icon.png" alt="Globus" class="globe-icon">
+                <select id="language-dropdown" onchange="changeLanguage()">
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option>
+                    <option value="zh">官话</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2 id="hero-text">Finde deinen Schülerjob</h2>
+            <input type="text" id="search" placeholder="Jobtitel, Firma oder Ort">
+            <button onclick="searchJobs()">Suche</button>
+        </div>
+    </section>
+
+    <section class="jobs">
+        <h2 id="jobs-heading">Aktuelle Jobangebote</h2>
+        <div id="job-list" class="job-list">
+            <!-- Jobliste -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p id="footer-text">&copy; 2025 Job-It. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
