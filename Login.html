@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job It - Mach's dir leicht</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Job-It</h1>
+            <nav>
+                <ul>
+                    <li><a href="Index.html" id="hometext">Home</a></li>
+                    <li><a href="About.html" id="aboutus">Über uns</a></li>
+                    <li><a href="#" id="contact">Kontakt</a></li>
+                    <li><a href="Login.html" id="login">Login</a></li>
+                </ul>
+                
+            </nav>
+            <div class="language-selector">
+                <h5>Language</h5>
+                <section></section>
+                <img src="globe-icon.png" alt="Globus" class="globe-icon">
+                <select id="language-dropdown" onchange="changeLanguage()">
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option>
+                    <option value="zh">官话</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+     
+
+    <section>
+        <div>
+        </div>
+    </section>
+    <section>
+        <div class="loginwindow">
+            <p class="title">Login</p>
+            <form class="form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <div class="forgot">
+                        <a rel="noopener noreferrer" href="#">Forgot Password?</a>
+                    </div>
+                </div>
+            <button class="sign" onclick="login()">Sign in</button>
+            </form>
+            <p class="signup">
+            Don't have an account?
+            <a rel="noopener noreferrer" href="#" class="">Sign up</a>
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <p id="footer-text">&copy; 2025 Job-It. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
